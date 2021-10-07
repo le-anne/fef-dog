@@ -41,7 +41,7 @@ const app = new Vue({
     addEventListener("offline", () => {
       this.online = false;
     })
-    addEventListener.online("online", () => {
+    addEventListener("online", () => {
       this.online = true;
     })
   },
