@@ -16,7 +16,7 @@ const app = new Vue({
       this.currentDogUrl = asJson.message;
       console.log(this.currentDogUrl);
     },
-    addFav: async function() {
+    addFavourite: async function() {
       if (!this.favourites.includes(this.currentDogUrl)) {
               this.favourites.push(this.currentDogUrl);
         
