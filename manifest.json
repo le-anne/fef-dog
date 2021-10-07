@@ -3,7 +3,7 @@
     "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/",
-    "start_url": "/",
+    "start_url": "https://le-anne.github.io/",
     "name": "Doggo Cave",
     "short_name": "Doggo Cave",
     "description": "An app for favoriting dogs.",
