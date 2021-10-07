@@ -3,7 +3,7 @@ if (window.location.protocol != "https:") {
   window.location.reload();
 }
 
-ocnst app = new Vue({
+const app = new Vue({
   el: "#app",
   data: {
     currentDogUrl: null,
