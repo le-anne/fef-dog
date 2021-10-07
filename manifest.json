@@ -1,0 +1,21 @@
+{
+  "background_color": "#ffffff",
+  "description": "An app for favoriting dogs.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Doggo Cave",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Doggo Cave",
+  "start_url": "/",
+  "theme_color": "#ff6437",
+  "categories": [],
+  "screenshots": [],
+  "shortcuts": [],
+  "icons": [
+    {
+      "src": "/dog512.png",
+      "type": "image/png"
+    }
+  ]
+}
