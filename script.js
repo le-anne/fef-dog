@@ -57,6 +57,6 @@ const app = new Vue({
   }
 });
 
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js")
-}
+navigator.serviceWorkerContainer
+      .register("sw.js")
+      .then(function(reg){
