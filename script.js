@@ -57,10 +57,24 @@ const app = new Vue({
   }
 });
 
-if (navigator.serviceWorker) {
-  navigator.serviceWorker.register('/sw.js').then(function(registration) {
-    console.log('ServiceWorker registration successful with scope:',  registration.scope);
-  }).catch(function(error) {
-    console.log('ServiceWorker registration failed:', error);
-  });
-}
+self.addEventListener('install', function(event) {
+  // Perform install steps
+});
+
+var CACHE_NAME = 'my-site-cache-v1';
+var urlsToCache = [
+  '/',
+  'styles.css',
+  'script.js'
+];
+
+self.addEventListener('install', function(event) {
+  // Perform install steps
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(function(cache) {
+        console.log('Opened cache');
+        return cache.addAll(urlsToCache);
+      })
+  );
+});
