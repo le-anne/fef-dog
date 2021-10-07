@@ -1,4 +1,9 @@
-const app = new Vue({
+if (window.location.protocol != "https:") {
+  window.location.protocol = "https:";
+  window.location.reload();
+}
+
+ocnst app = new Vue({
   el: "#app",
   data: {
     currentDogUrl: null,
@@ -44,6 +49,11 @@ const app = new Vue({
   watch: {
     favourites(updatedFavourites) {
       localStorage.favourites = JSON.stringify(updatedFavourites)
+    },
+    online(isOnline) {
+      if(isOnline) {
+        this.loadDog();
+      }
     }
   }
 });
