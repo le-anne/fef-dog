@@ -1,6 +1,5 @@
-if (window.location.protocol != "https:") {
-  window.location.protocol = "https:";
-  window.location.reload();
+if (location.protocol == "http:") {
+  location.protocol = "https:";
 }
 
 const app = new Vue({
