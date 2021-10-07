@@ -4,12 +4,10 @@
     <title>The Woofiest Vue</title>
     <link rel="manifest" href="manifest.json">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="serviceWorker" href="sw.js">
     
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
-    <meta name="theme-color" content="#ff6437">
+       <meta name="theme-color" content="#ff6437">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +21,7 @@
   </head>
   <body>    
     <div id="app" class="app">
-      <h1 class="title"> Doggo Cave <br> <span class="tagline"> the doggo favoriting app</span>
+      <h1 class="title"> Doggo Cave <br> <span class="tagline"> the dog favoriting app</span>
       </h1>
       
       <div class="container" v-if="online">
