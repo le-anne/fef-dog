@@ -2,7 +2,7 @@
     "theme_color": "#ff6437",
     "background_color": "#ffffff",
     "display": "standalone",
-    "scope": "/",
+    "scope": "https://le-anne.github.io/fef-dog/",
     "start_url": "https://le-anne.github.io/",
     "name": "Doggo Cave",
     "short_name": "Doggo Cave",
