@@ -3,6 +3,7 @@ const CACHE = "favouriteImageCache";
 self.addEventListener('install', async (event) => {
   const cache = await caches.open(CACHE);
   await cache.add("/");
+  await cache.add("https://le-anne.github.io/fef-dog/);
   await cache.add("/script.js");
   await cache.add("/style.css");
 });
