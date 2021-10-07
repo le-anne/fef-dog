@@ -23,6 +23,15 @@ const app = new Vue({
   },
   created() {
     this.loadDog();
+},
+  mounted() {
+    if (localStorage.favourites) {
+      this.favourites = JSON.parse(localStorage.favourites);
+    }
+  },
+  watch: {
+    favourites(updatedFavourites) {
+      localStorage.favourites = JSON.stringify(updatedFavourites)
+    }
   }
 });
-
