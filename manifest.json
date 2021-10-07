@@ -8,9 +8,10 @@
   "scope": "/",
   "short_name": "Doggo Cave",
   "start_url": "/",
-  "theme_color": "#ff6347",
+  "theme_color": "#ff6437",
   "categories": [],
   "screenshots": [],
+  "shortcuts": [],
   "icons": [
     {
       "src": "https://cdn.glitch.me/889c9caa-3872-479a-ba09-7b6d48657f6d%2Fandroid-chrome-512x512.png?v=1633634668528",
