@@ -1,10 +1,10 @@
 const CACHE = "favouriteImageCache";
 
-self.addEventListener('install', async (event) => {
+self.addEventListener("install", async (event) => {
   const cache = await caches.open(CACHE);
   await cache.add("/");
-  await cache.add("script.js");
-  await cache.add("style.css");
+  await cache.add("/script.js");
+  await cache.add("/style.css");
 });
 
 self.addEventListener("fetch", (event) => {
