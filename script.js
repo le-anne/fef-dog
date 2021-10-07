@@ -39,10 +39,10 @@ const app = new Vue({
     
     const onlineStatus = navigator.onLine;
     addEventListener("offline", () => {
-      this.online = false;
+      this.onLine = false;
     })
     addEventListener("online", () => {
-      this.online = true;
+      this.onLine = true;
     })
   },
   watch: {
