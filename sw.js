@@ -8,12 +8,12 @@ self.addEventListener('install', async (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  event.respondWith(async () => {
+  event.respondWith((async () => {
     try {
       return await fetch(event.request);
     } catch (error) {
       const cache = await caches.open(CACHE);
       return await cache.match(event.request);
     }
-  })();
+  })());
 });
