@@ -1,0 +1,119 @@
+* {
+font-family: 'Architects Daughter', sans-serif;
+}
+
+body {
+  margin: 0;
+font-family: 'Lato', sans-serif;
+  background: url(https://cdn.glitch.com/8c995165-2303-4457-a458-2b353ff3e9a1%2Fbg.jpg?v=1633185706738) #f2f2f2;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 520px 120px 1fr;
+  grid-template-areas:
+    "title title"
+    "card card"
+    "next fav"
+    "subtitle subtitle"
+    "favourites favourites";
+  height: 100vh;
+}
+
+.title {
+  grid-area: title;
+  margin: .5em;
+  text-align: center;
+  color: tomato;
+  font-size: 4em;
+  font-family: 'Architects Daughter', sans-serif;
+  letter-spacing: .2em;
+  font-weight: 700px;
+}
+
+.card {
+  grid-area: card;
+  display: block;
+  width: 100%;
+  height: 500px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: -40px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 10px solid white;
+  box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.5);
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  margin: 20px 5px;
+  border: 8px solid white;
+  border-radius: 50%;
+  color: transparent;
+  cursor: pointer;
+  box-shadow: 0 2px 10px 5px rgba(0,0,0,.1);
+}
+
+.next {
+  grid-area: next;
+  background: url(https://cdn.glitch.com/381dc777-702c-41b2-82aa-cac2e30d38de%2Funchecked.png?1522935023612) no-repeat center tomato;
+  background-size: 20px;
+  justify-self: end;
+}
+
+.next:hover {
+  background-color: #da553d;
+}
+
+.fav {
+  grid-area: fav;
+  background: url("https://cdn.glitch.com/381dc777-702c-41b2-82aa-cac2e30d38de%2Fchecked%20(1).png?1522935023792") no-repeat center #00CC33;
+  background-size: 20px;
+}
+
+.fav:hover {
+  background-color: #51c384;
+}
+
+h2 {
+  grid-area: subtitle;
+  letter-spacing: .2em;
+  margin: 0 2rem;
+  text-align: center;
+  color: tomato;
+}
+
+.tagline {
+  text-align: center;
+  color: black;
+  font-family: 'Architects Daughter', sans-serif; 
+  letter-spacing: 0;
+  font-size: 24px; 
+  vertical-align: text-top;
+}
+
+
+.favourites-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.favourites-item {
+  position: relative;
+  list-style: none;
+  margin: 15px;
+}
+
+.favourites-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid white;
+}
