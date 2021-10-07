@@ -1,22 +1,27 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>The Woofiest Vue</title>
-        <meta name="theme-color" content="#ff6437">
+    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="serviceWorker" href="sw.js">
+    
+
+       <meta name="theme-color" content="#ff6437">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="script.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="manifest" href="manifest.json">
-  </head>
-
     
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js" defer></script>
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
   <body>    
     <div id="app" class="app">
-      <h1 class="title"> Doggo Cave <br> <span class="tagline"> the doggo favoriting app</span>
+      <h1 class="title"> Doggo Cave <br> <span class="tagline"> the dog favoriting app</span>
       </h1>
       
       <div class="container" v-if="online">
