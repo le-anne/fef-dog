@@ -131,3 +131,7 @@ h2 {
   background: url(https://cdn.glitch.com/381dc777-702c-41b2-82aa-cac2e30d38de%2Funchecked.png?1522935023612) no-repeat center tomato;
   background-size: 10px;
 }
+
+.container {
+  display: contents;
+}
