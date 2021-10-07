@@ -15,6 +15,7 @@
   "icons": [
     {
       "src": "/dog512.png",
+      "size": "512x512",
       "type": "image/png"
     }
   ]
