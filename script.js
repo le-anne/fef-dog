@@ -1,4 +1,4 @@
-f (location.protocol == "http:") {
+if (location.protocol == "http:") {
   location.protocol = "https:";
 }
 
