@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Woofiest Vue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js" defer></script>
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>    
+    <div id="app" class="app">
+      <h1 class="title"> Doggo Cave <br> <span class="tagline"> the doggo favoriting app</span>
+      </h1>
+         <img alt="The bestest doggo of all doggos" v-bind:src="currentDogUrl" class="card" >
+    
+      <button v-on:click="loadDog" class="next">Next</button>
+      </button>
+    <button v-on:click="addFavourite" class="fav">
+      Favourite</button>
+    <h2>
+       Favorites
+    </h2>
+<ul class="favourites-list">
+  <li v-for="dog in favourites" class="favourites-item">
+   <img alt="a fav doggo" v-bind:src="dog" class="favourites-img">
+    <button v-on:click="removeFav(dog)" class="remove">Remove</button>
+    </button>
+  </li>
+    </ul>
+    </button>
+        </div>
+  
+    
+  </body>
+</html>
