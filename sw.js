@@ -1,20 +1,11 @@
-const CACHE = "favouriteImageCache";
-
-self.addEventListener('install', async (event) => {
-  const cache = await caches.open(CACHE);
-  await cache.add("/");
-  await cache.add("https://le-anne.github.io/fef-dog/");
-  await cache.add("/script.js");
-  await cache.add("/style.css");
-});
-
-self.addEventListener("fetch", (event) => {
-  event.respondWith((async () => {
-    try {
-      return await fetch(event.request);
-    } catch (error) {
-      const cache = await caches.open(CACHE);
-      return await cache.match(event.request);
-    }
-  })());
-});
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
