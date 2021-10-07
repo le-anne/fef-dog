@@ -1,23 +1,32 @@
 {
-  "background_color": "#ffffff",
-  "description": "An app for favoriting dogs.",
-  "dir": "ltr",
-  "display": "standalone",
-  "name": "Doggo Cave",
-  "orientation": "any",
-  "scope": "/",
-  "short_name": "Doggo Cave",
-  "start_url": "/",
-  "theme_color": "#ff6437",
-  "categories": [],
-  "screenshots": [],
-  "shortcuts": [],
-  "icons": [
-    {
-      "src": "https://cdn.glitch.me/889c9caa-3872-479a-ba09-7b6d48657f6d%2Fandroid-chrome-512x512.png?v=1633634668528",
-      "sizes": "512x512",
-      "type": "image/png" 
-    }
-  ]
+    "theme_color": "#ff6437",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Doggo Cave",
+    "short_name": "Doggo Cave",
+    "description": "An app for favoriting dogs.",
+    "icons": [
+        {
+            "src": "https://cdn.glitch.me/dd281d19-1471-4e8b-b02a-d21d6789d51a%2Ficon-192x192.png?v=1633641828424",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cdn.glitch.me/dd281d19-1471-4e8b-b02a-d21d6789d51a%2Ficon-256x256.png?v=1633641823583",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cdn.glitch.me/dd281d19-1471-4e8b-b02a-d21d6789d51a%2Ficon-384x384.png?v=1633641820353",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cdn.glitch.me/dd281d19-1471-4e8b-b02a-d21d6789d51a%2Ficon-512x512.png?v=1633641816495",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }
-
