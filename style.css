@@ -64,7 +64,8 @@ button {
   justify-self: end;
 }
 
-.next:hover {
+.next:hover,
+.remove:hover {
   background-color: #da553d;
 }
 
@@ -97,6 +98,7 @@ h2 {
 
 
 .favourites-list {
+  grid-area: favourites;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -116,4 +118,16 @@ h2 {
   height: 150px;
   object-fit: cover;
   border: 2px solid white;
+}
+
+.remove {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  border: 2px solid white;
+  background: url(https://cdn.glitch.com/381dc777-702c-41b2-82aa-cac2e30d38de%2Funchecked.png?1522935023612) no-repeat center tomato;
+  background-size: 10px;
 }
