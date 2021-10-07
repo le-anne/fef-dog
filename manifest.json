@@ -9,6 +9,7 @@
   "short_name": "Doggo Cave",
   "start_url": "https://le-anne.github.io/fef-dog/",
   "theme_color": "#ff6437",
+  "prefer_related_applications": false,
   "categories": [],
   "screenshots": [],
   "shortcuts": [],
