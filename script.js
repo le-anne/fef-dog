@@ -2,7 +2,8 @@ const app = new Vue({
   el: "#app",
   data: {
     currentDogUrl: null,
-    favourites: []
+    favourites: [],
+    online: true,
   },
   methods: {
     loadDog: async function() {
@@ -11,9 +12,12 @@ const app = new Vue({
       this.currentDogUrl = asJson.message;
       console.log(this.currentDogUrl);
     },
-    addFavourite: function() {
+    addFavourite: async function() {
       if (!this.favourites.includes(this.currentDogUrl)) {
               this.favourites.push(this.currentDogUrl);
+        
+        const imageCache = await caches.open("favouriteImageCache")
+        imageCache.add(this.currentDogUrl);
       }
       this.loadDog();
     },
@@ -28,6 +32,14 @@ const app = new Vue({
     if (localStorage.favourites) {
       this.favourites = JSON.parse(localStorage.favourites);
     }
+    
+    const onlineStatus = navigator.onLine;
+    addEventListener("offline", () => {
+      this.online = false;
+    })
+    addEventListener.online("online", () => {
+      this.online = true;
+    })
   },
   watch: {
     favourites(updatedFavourites) {
@@ -35,7 +47,6 @@ const app = new Vue({
     }
   }
 });
-
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("sw.js")
